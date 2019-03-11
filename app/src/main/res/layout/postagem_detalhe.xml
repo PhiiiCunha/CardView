@@ -9,7 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="10dp">
 
         <LinearLayout
             android:id="@+id/postagemLinerLayout"
@@ -35,13 +36,15 @@
                 android:id="@+id/fotoPostagemImageView"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:layout_marginTop="10dp"
                 android:scaleType="centerCrop"
                 app:srcCompat="@drawable/imagem1" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/mensagemPostagemTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="#tbt viagem legal!" />
 
         </LinearLayout>
@@ -54,17 +57,21 @@
 
             <Button
                 android:id="@+id/curtirButton"
+                style="?attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:drawableLeft="@drawable/ic_gostei_cinza_24dp"
+                android:text="Gostei" />
 
             <Button
                 android:id="@+id/comentarButton"
+                style="?attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:drawableLeft="@drawable/ic_comentario_cinza_24dp"
+                android:text="Comentar" />
         </LinearLayout>
     </LinearLayout>
 
